@@ -1,0 +1,104 @@
+.Palitra {
+  background: #1c1c1c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e0e0e0;
+  
+
+  &__content {
+
+    max-width: 900px;
+    padding: 2rem;
+    text-align: center;
+    background-color: #262626;
+    border-radius: 12px;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    color: #e0e0e0;
+  }
+
+  &__description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #b0b0b0;
+    padding: 1rem;
+  }
+
+  &__dropzone {
+    border: 2px dashed #666;
+    padding: 6rem;
+    cursor: pointer;
+    border-radius: 8px;
+    color: #999;
+    transition: border-color 0.3s;
+    &:hover {
+      border-color: #fff;
+    }
+  }
+  &__flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+  }
+  &__preview {
+    margin: 1.5rem 0;
+    img {
+      max-width: 100%;
+      width: 300px;
+      border-radius: 8px;
+      border: 1px solid #444;
+    }
+  }
+
+  &__colorCount {
+    margin-top: 1.5rem;
+    .MuiInputLabel-root,
+    .MuiSelect-select {
+      color: #fff;
+    }
+    .MuiOutlinedInput-root {
+      color: #fff;
+      & fieldset {
+        border-color: #666;
+      }
+      &:hover fieldset {
+        border-color: #fff;
+      }
+    }
+  }
+
+  &__button {
+    margin-top: 2rem;
+    background-color: #4a90e2;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    &:hover {
+      background-color: #357abd;
+    }
+  }
+
+  &__palette {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+
+  &__colorBox {
+    width: 60px;
+    height: 60px;
+    margin: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #666;
+  }
+}
