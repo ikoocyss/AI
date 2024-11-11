@@ -1,17 +1,16 @@
+
 .Palitra {
-  background: #1c1c1c;
+  background: #dfdede;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #e0e0e0;
   
-
   &__content {
-
     max-width: 900px;
     padding: 2rem;
     text-align: center;
-    background-color: #262626;
+    background-color: #d4d4d4;
     border-radius: 12px;
     color: #fff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
@@ -22,25 +21,27 @@
   &__title {
     margin-bottom: 1.5rem;
     font-weight: bold;
-    color: #e0e0e0;
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+
   }
 
   &__description {
     font-size: 1rem;
     margin-bottom: 2rem;
-    color: #b0b0b0;
+    color: #1f1f1f;
     padding: 1rem;
   }
 
   &__dropzone {
-    border: 2px dashed #666;
+    border: 2px dashed #0c648a;
     padding: 6rem;
     cursor: pointer;
     border-radius: 8px;
     color: #999;
     transition: border-color 0.3s;
     &:hover {
-      border-color: #fff;
+      border-color: #616161;
     }
   }
   &__flex{
@@ -51,6 +52,8 @@
   }
   &__preview {
     margin: 1.5rem 0;
+    
+    
     img {
       max-width: 100%;
       width: 300px;
@@ -63,27 +66,27 @@
     margin-top: 1.5rem;
     .MuiInputLabel-root,
     .MuiSelect-select {
-      color: #fff;
+      color: #202020;
     }
     .MuiOutlinedInput-root {
       color: #fff;
       & fieldset {
-        border-color: #666;
+        border-color: #6b6b6b;
       }
       &:hover fieldset {
-        border-color: #fff;
+        border-color: #000000;
       }
     }
   }
 
   &__button {
     margin-top: 2rem;
-    background-color: #4a90e2;
+    background-color: #7aa4d4;
     color: #fff;
     font-weight: bold;
     padding: 0.75rem 1.5rem;
     &:hover {
-      background-color: #357abd;
+      background-color: #326497;
     }
   }
 

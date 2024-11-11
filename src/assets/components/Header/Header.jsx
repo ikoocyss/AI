@@ -51,14 +51,14 @@ const Header = () => {
                 onChange={handleChange}
                 sx={{
                   color: "#ffffff",
-                  borderRadius:"20px", // белый цвет текста
+                  borderRadius:"23px", // белый цвет текста
                 }}
                 renderValue={(value) => (
                   <div style={{  display: 'flex', alignItems: 'center' }}>
                     <img 
                       src={flags[value]} 
                       alt={`${value} flag`} 
-                      style={{  width: 20, height: 15, marginRight: 8 }} 
+                      style={{  width: 13, height: 8, marginRight: 8 }} 
                     />
                     <Typography>{value.toUpperCase()}</Typography>
                   </div>
@@ -79,14 +79,14 @@ const Header = () => {
               </Select>
             </FormControl>
           </div>
-          <div className="Header__list">
+          {/* <div className="Header__list">
             <ul>
               <li>Цвета</li>
               <li>Палитра</li>
               <li>Градиенты</li>
               <li>Меше градиенты</li>
             </ul>
-          </div>
+          </div> */}
           <div className="Header__profile">
             <img src={profile} alt="" />
           </div>

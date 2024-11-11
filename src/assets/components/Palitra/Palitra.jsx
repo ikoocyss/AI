@@ -44,7 +44,7 @@ const Palitra = () => {
       <div className="container">
         <div className="Palitra__content">
           <Typography variant="h4" className="Palitra__title">
-            Определитель Палитры
+          Извлечь цветовую палитру из фотографии
           </Typography>
           <Typography variant="body1" className="Palitra__description">
             Загрузите изображение, и наш инструмент определит ключевые цвета для
@@ -54,7 +54,7 @@ const Palitra = () => {
           <Box {...getRootProps()} className="Palitra__dropzone">
             <input {...getInputProps()} />
             <Typography variant="body1">
-              Перетащите изображение сюда или нажмите для загрузки
+            Перетащите файл или щелкните, чтобы загрузить изображение
             </Typography>
           </Box>
           {image && (
