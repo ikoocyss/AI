@@ -79,6 +79,7 @@ const Header = () => {
               </Select>
             </FormControl>
           </div>
+<<<<<<< HEAD
           {/* <div className="Header__list">
             <ul>
               <li>Цвета</li>
@@ -87,6 +88,9 @@ const Header = () => {
               <li>Меше градиенты</li>
             </ul>
           </div> */}
+=======
+
+>>>>>>> 97cff9f4c823ec46534c09c2e715fdc42e3aadfa
           <div className="Header__profile">
             <img src={profile} alt="" />
           </div>

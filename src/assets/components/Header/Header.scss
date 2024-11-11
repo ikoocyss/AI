@@ -20,12 +20,25 @@
         column-gap: 19px;
     }
 
+<<<<<<< HEAD
     // &__list ul , li{
     //     display: flex;
     //     align-items: center;
     //     column-gap: 32px;
         
     // }
+=======
+    &__list ul , li{
+        display: flex;
+        align-items: center;
+        column-gap: 32px;
+        
+
+        :hover{
+            color: blue;
+        }
+    }
+>>>>>>> 97cff9f4c823ec46534c09c2e715fdc42e3aadfa
     &__profile img{
         width: 50px;
     }
