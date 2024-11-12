@@ -32,21 +32,25 @@ const Header = () => {
         <div className="Header__content">
           <div className="Header__logo">
             <h2>MindMesh</h2>
+          </div>
+          <div className="Header__profile">
+
+            <img src={profile} alt="" />
             <FormControl
               sx={{
                 borderRadius: "4px",
                 "& .MuiOutlinedInput-root": {
-                  backgroundColor: "transparent", // прозрачный фон
-                  color: "#ffffff", // белый цвет текста
-                  borderColor: "#ffffff", // белый цвет бордера
+                  backgroundColor: "transparent",
+                  color: "#ffffff", 
+                  borderColor: "#ffffff", 
                   "& fieldset": {
-                    borderColor: "#ffffff", // белый цвет рамки
+                    borderColor: "#ffffff", 
                   },
                   "&:hover fieldset": {
-                    borderColor: "#ffffff", // белый цвет при наведении
+                    borderColor: "#ffffff", 
                   },
                   "&.Mui-focused fieldset": {
-                    borderColor: "#ffffff", // белый цвет при фокусе
+                    borderColor: "#ffffff", 
                   },
                 },
               }}
@@ -57,14 +61,14 @@ const Header = () => {
                 onChange={handleChange}
                 sx={{
                   color: "#ffffff",
-                  borderRadius: "23px", // белый цвет текста
+                  borderRadius: "13px", 
                 }}
                 renderValue={(value) => (
                   <div style={{ display: "flex", alignItems: "center" }}>
                     <img
                       src={flags[value]}
                       alt={`${value} flag`}
-                      style={{ width: 13, height: 8, marginRight: 8 }}
+                      style={{ width: 13, height: 12, marginRight: 8 }}
                     />
                     <Typography>{value.toUpperCase()}</Typography>
                   </div>
@@ -96,9 +100,6 @@ const Header = () => {
                 </MenuItem>
               </Select>
             </FormControl>
-          </div>
-          <div className="Header__profile">
-            <img src={profile} alt="" />
           </div>
         </div>
       </div>
