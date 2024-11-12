@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import { MenuItem, Select, FormControl, InputLabel, Typography } from "@mui/material";
+import {
+  MenuItem,
+  Select,
+  FormControl,
+  InputLabel,
+  Typography,
+} from "@mui/material";
 import "./Header.scss";
 
 import ru from "../../images/ru.png";
@@ -14,7 +20,7 @@ const flags = {
 };
 
 const Header = () => {
-  const [language, setLanguage] = useState("ru"); 
+  const [language, setLanguage] = useState("ru");
 
   const handleChange = (event) => {
     setLanguage(event.target.value);
@@ -26,7 +32,7 @@ const Header = () => {
         <div className="Header__content">
           <div className="Header__logo">
             <h2>MindMesh</h2>
-            <FormControl 
+            <FormControl
               sx={{
                 borderRadius: "4px",
                 "& .MuiOutlinedInput-root": {
@@ -51,42 +57,46 @@ const Header = () => {
                 onChange={handleChange}
                 sx={{
                   color: "#ffffff",
-                  borderRadius:"23px", // белый цвет текста
+                  borderRadius: "23px", // белый цвет текста
                 }}
                 renderValue={(value) => (
-                  <div style={{  display: 'flex', alignItems: 'center' }}>
-                    <img 
-                      src={flags[value]} 
-                      alt={`${value} flag`} 
-                      style={{  width: 13, height: 8, marginRight: 8 }} 
+                  <div style={{ display: "flex", alignItems: "center" }}>
+                    <img
+                      src={flags[value]}
+                      alt={`${value} flag`}
+                      style={{ width: 13, height: 8, marginRight: 8 }}
                     />
                     <Typography>{value.toUpperCase()}</Typography>
                   </div>
                 )}
               >
                 <MenuItem value="ru">
-                  <img src={flags.ru} alt="RU flag" style={{ width: 20, height: 15, marginRight: 8 }} />
+                  <img
+                    src={flags.ru}
+                    alt="RU flag"
+                    style={{ width: 20, height: 15, marginRight: 8 }}
+                  />
                   RU | Русский
                 </MenuItem>
                 <MenuItem value="en">
-                  <img src={flags.en} alt="EN flag" style={{ width: 20, height: 15, marginRight: 8 }} />
+                  <img
+                    src={flags.en}
+                    alt="EN flag"
+                    style={{ width: 20, height: 15, marginRight: 8 }}
+                  />
                   EN | English
                 </MenuItem>
                 <MenuItem value="kg">
-                  <img src={flags.kg} alt="KG flag" style={{ width: 20, height: 15, marginRight: 8 }} />
+                  <img
+                    src={flags.kg}
+                    alt="KG flag"
+                    style={{ width: 20, height: 15, marginRight: 8 }}
+                  />
                   KG | Кыргызский
                 </MenuItem>
               </Select>
             </FormControl>
           </div>
-          {/* <div className="Header__list">
-            <ul>
-              <li>Цвета</li>
-              <li>Палитра</li>
-              <li>Градиенты</li>
-              <li>Меше градиенты</li>
-            </ul>
-          </div> */}
           <div className="Header__profile">
             <img src={profile} alt="" />
           </div>

@@ -20,12 +20,16 @@
         column-gap: 19px;
     }
 
-    // &__list ul , li{
-    //     display: flex;
-    //     align-items: center;
-    //     column-gap: 32px;
+    &__list ul , li{
+        display: flex;
+        align-items: center;
+        column-gap: 32px;
         
-    // }
+
+        :hover{
+            color: blue;
+        }
+    }
     &__profile img{
         width: 50px;
     }
