@@ -61,7 +61,7 @@ const Header = () => {
                 onChange={handleChange}
                 sx={{
                   color: "#ffffff",
-                  borderRadius: "13px", 
+                  borderRadius: "3px", 
                 }}
                 renderValue={(value) => (
                   <div style={{ display: "flex", alignItems: "center" }}>
